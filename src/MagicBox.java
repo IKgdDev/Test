@@ -17,7 +17,7 @@ public class MagicBox<T> {
         return false;
     }
 
-    public T pick() throws RuntimeException {
+    public T pick() {
         for (int i = 0; i < items.length; i++) {
             if (items[i] == null) {
                 throw new RuntimeException("Коробка не полна, осталось заполнить ещё " + (items.length - i));
