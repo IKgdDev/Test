@@ -9,7 +9,7 @@ public class MagicBox<T> {
 
     public boolean add(T item) {
         for (int i = 0; i < items.length; i++) {
-            if (items[i] != null) {
+            if (items[i] == null) {
                 items[i] = item;
                 return true;
             }
@@ -19,7 +19,7 @@ public class MagicBox<T> {
 
     public T pick() throws RuntimeException {
         for (int i = 0; i < items.length; i++) {
-            if (items[i] != null) {
+            if (items[i] == null) {
                 throw new RuntimeException("Коробка не полна, осталось заполнить ещё " + (items.length - i));
             }
         }
