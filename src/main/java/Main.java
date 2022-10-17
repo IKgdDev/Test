@@ -4,9 +4,6 @@ public class Main {
 
         System.out.println(magicBox.add("Petr"));
         System.out.println(magicBox.add("Oleg"));
-
-        //System.out.println(magicBox.pick());
-
         System.out.println(magicBox.add("Sasha"));
         System.out.println(magicBox.add("Misha"));
 
