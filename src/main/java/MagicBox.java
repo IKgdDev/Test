@@ -23,10 +23,11 @@ public class MagicBox<T> {
                 throw new RuntimeException("Коробка не полна, осталось заполнить ещё " + (items.length - i));
             }
         }
-        Random random = new Random();
-        int randomInt = random.nextInt(items.length);
+        return items[new Random().nextInt(items.length)];
+    }
 
-        return items[randomInt];
+    public int getBoxVolume(){
+        return items.length;
     }
 
 }
